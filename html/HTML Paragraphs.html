@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<body>
+    <!-- 
+        Paragraph은 항상 세 줄에서 시작되며 일반적으로 하나의 텍스트 덩어리다.
+        Paragraph은 항상 새 줄에서 시작하며 브라우저에 단락 앞뒤에 자동으로 공백(여백)을 추가한다.
+    -->
+<!-- ex1 -->
+<!--     
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+ -->
+
+ <!-- ex2 -->
+<!--
+
+ <p>
+    This paragraph
+    contains a lot of code,
+    is the souce code,
+    but the browser
+    ignore it.
+ </p>
+
+ <p>
+    This paragraph
+    contains            a lot of spaces
+    in the source           code,
+    but the         browser
+    ignore it.
+ </p>
+-->    
+
+<!-- ex3 -->
+<!-- 
+    <br> 태그 <hr>는 html페이지에서 주제별 구분선을 정의하며, 대부분 가로선으로 표시된다.
+    <p> 요소는 <hr> html페이지에서 콘텐츠를 구분하거나 변경 사항을 정의하는데 사용 됩니다.
+-->
+
+<!-- 
+<h1>This is heading 1 </h1>
+<p>This is some text.</p>
+<hr>
+<h2>This is deading 2</h2>
+<p>This is some other text.</p>
+<hr>
+ -->
+
+ <!-- ex4 -->
+<!-- <p>This is<br>a paragraph<br>with line breaks</p>
+ -->
+<!-- ex5 -->
+<!-- 이시는 한 줄로 표시됩니다. -->
+<p>
+    My Bonnie lies over the ocean.
+
+    My Bonnie lies over the sea.
+
+    My Bonnie lies over the ocean.
+
+    Oh, bring back my Bonnie to me.
+</p>
+<!-- 해결책 -->
+<pre>
+    My Bonnie lies over the ocean.
+
+    My Bonnie lies over the sea.
+
+    My Bonnie lies over the ocean.
+
+    Oh, bring back my Bonnie to me.
+</pre>
+
+<!-- 
+- paragraph attribute..
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+- hr attribute..
+hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    color: gray;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    unicode-bidi: isolate;/*
+                                텍스트의 방향(왼쪽에서 오른쪽으로 쓰는 언어와 그 반대 언어 등을 주변 요소와 분리하여 독립적으로 처리합니다) 
+                                텍스트가 섞일 떄 레이아웃이 꺠지는 것을 방지 합니다.
+                          */
+
+    
+    white-space: pre;   /*
+                             가장 중요한 속성. 일반적인 HTML은 공백이나 줄바꿈을 하나로 무시하지만 이설정을 하면 
+                             이 설정은 코드에 입력된 띄어쓰기, 탭, 줄바꿈을 입력한 그대로화면에 출력한다.
+
+                        */
+    margin-block: 1em 1em;
+    margin-inline: 0px;
+}
+
+-->
+</body>
+</html>
